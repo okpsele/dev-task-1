@@ -5,6 +5,7 @@
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,7 +15,8 @@ body {
 .hero {
     background-image: url("../images/Background.png");
     background-size: cover;
-    height: 80vh;
+    min-height: 80vh;
+    padding-block: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,12 +93,16 @@ body {
 .partners {
     z-index: 100;
     display: flex;
+    align-items: center;
     width: 70%;
     margin-top: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .partners img {
     transform: scale(0.7);
+    padding: 1rem;
     width: 205px;
 }
 
@@ -104,9 +110,11 @@ section.about {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    min-height: 60vh;
     color: #fff;
     gap: 3rem;
+    flex-wrap: wrap;
+    padding-block: 5rem;
 }
 
 section.about h2 {
@@ -146,6 +154,7 @@ section.about button {
     max-width: 700px;
     text-align: center;
     margin-block: 10px;
+    padding-inline: 20px;
     font-size: 1.1rem;
     color: #fff;
 }
